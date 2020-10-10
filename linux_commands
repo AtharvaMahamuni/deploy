@@ -1,0 +1,63 @@
+Linux for PROGRAMMERS:
+
+1. Shell 
+BRANDS IN Shell
+Bourne shell(shell)
+Korn shell (ksh)
+Bourne Again shell(bash)
+zsh and many more 
+
+User  -> Shell + utilities -> Kernal
+All commands which we run are utilities.
+
+Idea behind linux:
+Although, you are the only one unsing your computer but always assume that your system was
+designed to be access by many people.
+
+Whenever you come accross any command you can use 
+man command to see the manual.
+for eg. man uname
+
+commands:
+=========
+uname
+uptime
+
+Shell commands:
+===============
+cd 
+pwd 
+cd ..
+
+whereis
+whoami
+cal
+date
+time
+mkdir
+rmdir
+rm 
+touch
+history
+cat
+tail
+
+vim is a editor 
+
+Permission 
+Linux was designed to allow many users to access single system at the same time.
+also files need to be protected.
+
+
+Permissions are of 3 types
+Read
+Write
+Execute
+
+
+drwxr-xr-x 10 lco staff         320 28 Jul 23:04 lcodev
+x - 1
+w - 2
+r - 4
+
+chmod 755 filename
