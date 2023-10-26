@@ -1,2 +1,2 @@
 # Linux-commands
-This are the some linux commands for programmers.
+Linux Commands and shell scripting course.
