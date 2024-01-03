@@ -1,2 +1,1 @@
-# Linux-commands
-Linux Commands and shell scripting course.
+# Bash Scripting
