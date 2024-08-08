@@ -1,0 +1,51 @@
+# Ain't markup language
+# The language which is used to have certain common principles to make transefer data between 2 services just like JSON or the XML
+
+# filename.yml or filename.yaml both are fine and acceptable names.
+
+# It is in the key-value pair.
+# Good resource: https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
+
+courses: # identation is important, courses is an object
+  course_name: "Golang bootcamp"
+  version: 1.5
+  price: &myprice 1999 # &myprice is an variable, which we will use below to process the payment
+  is_public: true
+  release_date: 2021-04-16 12:23:22 # standard way or format to write the date and time in yaml
+  pre_enroll: null
+  tags:
+    - Data Structures
+    - Algorithms
+    - REST
+    - gRPC
+  course_ta: ["ankit", "anurag", "aniruddha"] 
+  # above tags and this course_ta is exactly same for yaml it is treated as an array.
+  
+  # neted objects
+  ta_details:
+    - name: "ankit"
+      email: "ankit@dev.in"
+      role: "content admin"
+    - name: "anurag"
+      email: "anurage@dev.in"
+      role: "Backend SME"
+    - {name: "aniruddha", email: "aniruddha@dev.in", role: "DSA SME"}
+  
+  short_desc: >
+    Now we are writing short description
+    provided the greater than symbol so all the
+    indentation and the spaces between this text will be removed while processing this text
+  
+  long_desc: |
+    With pipe sign all the indentation and spaces are preserved while writing the text. That's the difference.
+  
+  process_payment: *myprice # *price is used to refer the above price.
+
+  adv: &adv
+    mykey: myval
+
+  another_adv:
+    one: two
+    << : *adv # the key value pairs in the adv will also be added in another_adv
+
+  
