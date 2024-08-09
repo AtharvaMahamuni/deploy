@@ -1,0 +1,1 @@
+The common argument comes is the docker vs the VM. VM is bloated and running so many things kernal and OS on top of your kernal and OS. Which is opposite to docker which uses the bareminimum of those to run you applications with the containers.c
