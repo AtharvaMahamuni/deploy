@@ -1,1 +1,10 @@
-The common argument comes is the docker vs the VM. VM is bloated and running so many things kernal and OS on top of your kernal and OS. Which is opposite to docker which uses the bareminimum of those to run you applications with the containers.c
+The common argument comes is the docker vs the VM. VM is bloated and running so many things kernal and OS on top of your kernal and OS. Which is opposite to docker which uses the bareminimum of those to run you applications with the containers.
+
+
+Command used for python-app docker image creation - 
+docker build -t atharvamahamuni/python-app-test:0.0.1.RELEASE .
+
+Then there is push command to push it to the remote docker hub repo.
+
+Command to build the node app
+docker build -t atharvamahamuni/node-app:0.0.1.RELEASE .
